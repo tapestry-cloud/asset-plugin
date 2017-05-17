@@ -1,0 +1,13 @@
+{
+    "name": "tapestry-cloud/asset-plugin",
+    "description": "Asset Plugin for Tapestry",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Dann",
+            "email": "simon.dann@gmail.com"
+        }
+    ],
+    "require": {}
+}
