@@ -9,8 +9,8 @@ Next you need to update your site configuration to include the path to manifest.
 ```php
 // ...
 
-    'asset' => [
-        'manifest_path' => __DIR__ . '/rev-manifest.json'
+    'plugins' => [
+        'asset_manifest_path' => __DIR__ . '/rev-manifest.json'
     ],
 
 // ...

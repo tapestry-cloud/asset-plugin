@@ -39,7 +39,7 @@ class ServiceProvider extends AbstractServiceProvider implements BootableService
         /** @var Configuration $configuration */
         $configuration = $this->getContainer()->get(Configuration::class);
 
-        if (! $manifestPath = $configuration->get('asset.manifest_path')) {
+        if (! $manifestPath = $configuration->get('plugins.asset_manifest_path')) {
             throw new \Exception('You need to set the location of your manifest path in your site configuration.');
         }
 
