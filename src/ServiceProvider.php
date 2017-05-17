@@ -3,10 +3,11 @@
 namespace TapestryCloud\Asset;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
+use League\Container\ServiceProvider\BootableServiceProviderInterface;
 use Tapestry\Entities\Configuration;
 use Tapestry\Plates\Engine;
 
-class ServiceProvider extends AbstractServiceProvider
+class ServiceProvider extends AbstractServiceProvider implements BootableServiceProviderInterface
 {
     /** @var array */
     protected $provides = [];
@@ -17,9 +18,20 @@ class ServiceProvider extends AbstractServiceProvider
      * from the ContainerAwareTrait.
      *
      * @return void
-     * @throws \Exception
      */
     public function register()
+    {
+        // ...
+    }
+
+    /**
+     * Method will be invoked on registration of a service provider implementing
+     * this interface. Provides ability for eager loading of Service Providers.
+     *
+     * @return void
+     * @throws \Exception
+     */
+    public function boot()
     {
         /** @var Engine $engine */
         $engine = $this->getContainer()->get(Engine::class);
