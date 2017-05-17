@@ -43,7 +43,6 @@ class ServiceProvider extends AbstractServiceProvider implements BootableService
             throw new \Exception('You need to set the location of your manifest path in your site configuration.');
         }
 
-        $helper = new AssetHelper($manifestPath);
-        $engine->loadExtension($helper);
+        $engine->loadExtension(new AssetHelper($manifestPath));
     }
 }
