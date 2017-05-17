@@ -1,0 +1,2 @@
+# Tapetry Asset Plugin
+
