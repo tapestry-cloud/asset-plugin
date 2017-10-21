@@ -18,5 +18,10 @@
         "psr-4": {
             "TapestryCloud\\Asset\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TapestryCloud\\Tests\\": "tests"
+        }
     }
 }
