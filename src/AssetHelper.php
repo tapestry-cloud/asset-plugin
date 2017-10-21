@@ -45,7 +45,7 @@ class AssetHelper implements ExtensionInterface
             $manifest = json_decode(file_get_contents($this->manifestPath), true);
             $filename = pathinfo($src, PATHINFO_BASENAME);
             if (isset($manifest[$filename])) {
-                $src = str_replace($filename, $manifest[$filename], $src);
+                $src = $manifest[$filename];
             }
         }
         return url($src);
