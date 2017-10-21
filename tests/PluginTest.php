@@ -32,7 +32,5 @@ class PluginTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals('http://localhost:3000/test/test.css', $assetPlugin->asset('test/test.css'));
         $this->assertEquals('http://localhost:3000/test.css', $assetPlugin->asset('test.css'));
-
-
     }
 }
