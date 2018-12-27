@@ -13,7 +13,7 @@ class PluginTest extends \PHPUnit_Framework_TestCase
     public function testAssetsAreCorrectlyParsed(){
 
         //
-        // The asset helper makes use of the `use` helper function which needs Tapestry loading
+        // The asset helper makes use of the `url` helper function which needs Tapestry loading
         // for it to work. Therefore we init Tapestry with a mock project folder.
         //
         $definitions = new DefaultInputDefinition();
