@@ -13,18 +13,19 @@ class AssetHelper implements ExtensionInterface
     public $template;
 
     /**
-     * @var string
+     * @var Manifest
      */
-    private $manifestPath = '';
+    private $manifest;
 
     /**
      * AssetHelper constructor.
      *
      * @param $manifestPath
+     * @throws \Exception
      */
     public function __construct($manifestPath)
     {
-        $this->manifestPath = $manifestPath;
+        $this->manifest = new Manifest($manifestPath);
     }
 
     /**
@@ -41,13 +42,6 @@ class AssetHelper implements ExtensionInterface
      */
     public function asset($src)
     {
-        if (file_exists($this->manifestPath)) {
-            $manifest = json_decode(file_get_contents($this->manifestPath), true);
-            $filename = pathinfo($src, PATHINFO_BASENAME);
-            if (isset($manifest[$filename])) {
-                $src = $manifest[$filename];
-            }
-        }
-        return url($src);
+        return url($this->manifest->find($src));
     }
 }
