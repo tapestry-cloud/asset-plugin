@@ -1,8 +1,12 @@
-# Tapetry Asset Plugin
-[![Packagist](https://img.shields.io/packagist/v/tapestry-cloud/asset-plugin.svg?style=flat-square)](https://packagist.org/packages/tapestry-cloud/asset-plugin)
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.6-8892BF.svg?style=flat-square)](https://php.net/)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.carloscuesta.me)
+<h1 align="center">Tapetry Asset Plugin</h1>
+<p align="center"><em>An equivilant to Laravel mix()</em></p>
+
+<p align="center">
+ <a href="https://packagist.org/packages/tapestry-cloud/asset-plugin" title="Packagist"><img src="https://img.shields.io/packagist/v/tapestry-cloud/asset-plugin.svg?style=flat-square" alt="Packagist"/></a>
+ <a href="https://php.net/" title="Minimum PHP Version"><img src="https://img.shields.io/badge/php-%3E%3D%205.6-8892BF.svg?style=flat-square" alt="Minimum PHP Version"/></a>
+ <a href="LICENSE" title="Software License"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"/></a>
+ <a href="https://gitmoji.carloscuesta.me" title="Gitmoji"><img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji"/></a>
+</p>
 
 ## Install
 
