@@ -37,11 +37,15 @@ class AssetHelper implements ExtensionInterface
     }
 
     /**
-     * @param $src
+     * @param string $src
+     * @param string|null $base
      * @return string
      */
-    public function asset($src)
+    public function asset($src, $base = null)
     {
+        if (!is_null($base)) {
+            return url($base . '/' . $this->manifest->find($src));
+        }
         return url($this->manifest->find($src));
     }
 }
